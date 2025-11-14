@@ -1,0 +1,19 @@
+# Jaspr build output
+src/.dart_tool/
+src/.packages
+src/build/
+src/pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

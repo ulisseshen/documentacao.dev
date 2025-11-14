@@ -1,0 +1,54 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter SDK
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - name: Install Jaspr CLI
+        run: dart pub global activate jaspr_cli
+
+      - name: Get dependencies
+        working-directory: ./src
+        run: dart pub get
+
+      - name: Clean build cache
+        working-directory: ./src
+        run: |
+          # Clean any stale build artifacts
+          rm -rf .dart_tool/build
+          rm -rf build
+
+      - name: Build Jaspr project
+        working-directory: ./src
+        run: |
+          export PATH="$PATH:$HOME/.pub-cache/bin"
+          jaspr build --verbose
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: transliteradu
+          entryPoint: ./src
