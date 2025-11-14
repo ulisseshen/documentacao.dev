@@ -334,54 +334,63 @@ class DocCards extends StatelessComponent {
     return card;
   }
 
-  // Flutter icon (official colors and design)
+  // Flutter icon (official logo from vectorlogo.zone)
   Component _flutterIcon() {
     return raw('''
-<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="flutterGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#47C5FB;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0175C2;stop-opacity:1" />
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <g transform="matrix(.061615 0 0 .061615 -1.430818 -1.2754)">
+    <defs><path id="A" d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z"/></defs>
+    <clipPath id="B"><use xlink:href="#A"/></clipPath>
+    <g clip-path="url(#B)"><path d="M360.3 779.7L520 939.5 959.4 500H639.9z" fill="#39cefd"/></g>
+    <defs><path id="C" d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z"/></defs>
+    <clipPath id="D"><use xlink:href="#C"/></clipPath>
+    <path clip-path="url(#D)" d="M639.9 20.7h319.5l-679 679.1L120.6 540z" fill="#39cefd"/>
+    <defs><path id="E" d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z"/></defs>
+    <clipPath id="F"><use xlink:href="#E"/></clipPath>
+    <path clip-path="url(#F)" d="M520 939.5l119.9 119.8h319.5L679.8 779.7z" fill="#03569b"/>
+    <defs><path id="G" d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z"/></defs>
+    <clipPath id="H"><use xlink:href="#G"/></clipPath>
+    <linearGradient id="I" gradientUnits="userSpaceOnUse" x1="566.635" y1="970.339" x2="685.65" y2="851.324">
+      <stop offset="0" stop-color="#1a237e" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#1a237e" stop-opacity="0"/>
     </linearGradient>
-    <linearGradient id="flutterGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00D2B8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0175C2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <polygon points="32,8 8,32 16,40 48,8" fill="url(#flutterGrad1)"/>
-  <polygon points="24,32 16,40 24,48 32,48 40,40 32,32" fill="url(#flutterGrad2)" opacity="0.85"/>
-  <polygon points="32,32 48,16 56,16 56,48 48,56 32,40" fill="#0175C2"/>
-  <polygon points="32,32 24,40 32,48 40,40" fill="#02569B"/>
+    <path clip-path="url(#H)" d="M757 857.4l-77.2-77.7L520 939.5z" fill="url(#I)"/>
+    <defs><path id="J" d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z"/></defs>
+    <clipPath id="K"><use xlink:href="#J"/></clipPath>
+    <g clip-path="url(#K)"><path d="M360.282 779.645L520.086 619.84 679.9 779.645 520.086 939.45z" fill="#16b9fd"/></g>
+    <radialGradient id="L" cx="7824.659" cy="-2855.979" r="5082.889" gradientTransform="matrix(0.25,0,0,-0.25,-1812,-622.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <path d="M959.4 500L679.8 779.7l279.6 279.7H639.9L360.2 779.7 639.9 500h319.5zM639.9 20.7L120.6 540l159.8 159.8 679-679.1H639.9z" fill="url(#L)"/>
+  </g>
 </svg>
 ''');
   }
 
-  // Dart icon (official colors and design)
+  // Dart icon (official logo from vectorlogo.zone)
   Component _dartIcon() {
     return raw('''
-<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="dartGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00D2B8;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#00B4CC;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#0175C2;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <path d="M16 44 L12 48 L12 16 L44 16 Z" fill="url(#dartGrad1)"/>
-  <path d="M16 44 L44 16 L52 16 L52 48 L44 48 Z" fill="#0175C2"/>
-  <path d="M44 48 L52 48 L52 44 Z" fill="#01579B"/>
-  <path d="M16 44 L12 48 L44 48 Z" fill="#00D2B8" opacity="0.7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <path d="M17.582 17.424l-4.138-4.14.016 29.903.05 1.396c.02.66.145 1.4.345 2.17l32.775 11.56 8.2-3.63.007-.012L17.58 17.424z" fill="#00c4b3"/>
+  <path d="M13.856 46.753h.003c-.003-.012-.008-.026-.014-.04.007.015.007.03.01.04zm40.966 7.93l-8.2 3.63-32.77-11.56c.625 2.404 2.012 5.106 3.502 6.58l10.69 10.637 23.788.03 2.98-9.317z" fill="#22d3c5"/>
+  <g fill="#0075c9">
+    <path d="M13.556 13.285L.813 32.53c-1.058 1.13-.53 3.462 1.173 5.18l7.356 7.416 4.624 1.63c-.2-.768-.326-1.5-.345-2.17l-.05-1.396-.015-29.903z"/>
+    <path d="M46.9 13.67c-.77-.195-1.508-.318-2.173-.337l-1.478-.054-29.805.007 41.392 41.386 3.636-8.2-11.57-32.8z"/>
+  </g>
+  <path d="M46.862 13.663c.013.005.027.008.038.01v-.004c-.013-.003-.025-.003-.038-.008zm6.615 3.518c-1.505-1.515-4.17-2.9-6.577-3.508L58.47 46.47l-3.64 8.2 8.882-2.838.02-24.352-10.256-10.3z" fill="#00a8e1"/>
+  <path d="M45.278 9.075l-7.4-7.36C36.152.018 33.82-.512 32.7.544l-19.244 12.74 29.805-.007 1.478.054c.665.02 1.404.142 2.173.337L45.28 9.073zm-31.833 4.2" fill="#00c4b3"/>
 </svg>
 ''');
   }
 
-  // Angular icon (simplified logo)
+  // Angular icon (official logo from vectorlogo.zone)
   Component _angularIcon() {
     return raw('''
-<svg viewBox="0 0 48 48" fill="none">
-  <path d="M24 6L8 14L10 32L24 42L38 32L40 14L24 6Z" fill="#DD0031"/>
-  <path d="M24 6V42L38 32L40 14L24 6Z" fill="#C3002F"/>
-  <path d="M24 12L16 30H20L22 26H26L28 30H32L24 12ZM24 18L26 24H22L24 18Z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="M1 5.3L15.892 0l15.284 5.218-2.47 19.694L15.892 32 3.286 25.004 1 5.3z" fill="#e23237"/>
+  <path d="M31.176 5.218L15.892 0v32l12.814-7.088 2.47-19.694z" fill="#b52e31"/>
+  <path d="M15.915 3.74l-9.28 20.64 3.463-.07 1.87-4.664h8.3l2.032 4.7 3.302.07L15.915 3.74zm.023 6.626l3.14 6.557H13.2l2.747-6.557z" fill="#fff"/>
 </svg>
 ''');
   }
