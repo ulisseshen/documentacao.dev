@@ -62,7 +62,7 @@ cd meu-projeto
 
 Após criar o projeto, você terá a seguinte estrutura:
 
-```
+```text
 meu-projeto/
 ├── src/
 │   ├── index.js

@@ -164,7 +164,7 @@ jaspr serve
 
 ### Estrutura do Projeto
 
-```
+```text
 documentacao.dev/
 ├── content/          # Arquivos markdown da documentação
 │   ├── _data/       # Configurações YAML
