@@ -14,41 +14,35 @@ Use sempre GitHub Secrets para armazenar informações sensíveis. Nunca commite
 
 ## 🔐 Configuração do GitHub Secrets
 
-### Passo 1: Obter o Firebase Token
-
-**Método 1: Usando Firebase CLI (Recomendado para CI/CD)**
-
-```bash
-# Instale o Firebase CLI
-npm install -g firebase-tools
-
-# Faça login e gere um token CI
-firebase login:ci
-```
-
-Isso gerará um token. Copie-o para usar no próximo passo.
-
-**Método 2: Usando Service Account**
+### Passo 1: Criar Service Account
 
 1. Acesse o [Google Cloud Console](https://console.cloud.google.com/)
 2. Selecione seu projeto `transliteradu`
 3. Vá em **IAM & Admin** → **Service Accounts**
 4. Clique em **Create Service Account**
 5. Nome: `github-actions-deploy`
-6. Dê a role: **Firebase Hosting Admin**
-7. Clique em **Create Key** → escolha **JSON**
-8. Baixe o arquivo JSON
+6. Descrição: `Service account para deploy via GitHub Actions`
+7. Clique em **Create and Continue**
+8. Adicione as seguintes roles:
+   - **Firebase Hosting Admin** (`roles/firebasehosting.admin`)
+   - **Service Account User** (`roles/iam.serviceAccountUser`)
+9. Clique em **Continue** → **Done**
+10. Na lista de service accounts, clique na que você criou
+11. Vá na aba **Keys**
+12. Clique em **Add Key** → **Create new key**
+13. Escolha **JSON**
+14. Clique em **Create** - o arquivo será baixado automaticamente
 
 ### Passo 2: Adicionar Secret no GitHub
 
 1. Vá para o seu repositório no GitHub
 2. Clique em **Settings** → **Secrets and variables** → **Actions**
 3. Clique em **New repository secret**
-4. Nome: `FIREBASE_TOKEN`
-5. Valor:
-   - **Método 1**: Cole o token gerado pelo `firebase login:ci`
-   - **Método 2**: Cole o conteúdo completo do arquivo JSON da service account
+4. Nome: `FIREBASE_SERVICE_ACCOUNT`
+5. Valor: Cole o **conteúdo completo** do arquivo JSON baixado
 6. Clique em **Add secret**
+
+**Importante:** Após adicionar o secret no GitHub, **delete o arquivo JSON** do seu computador por segurança.
 
 ## 🔄 Como Funciona o Deploy Automático
 
@@ -139,9 +133,11 @@ Após cada push para `main`:
 
 ### Erro: "Permission denied"
 
-**Solução:** Verifique se o token tem permissões corretas:
-- Role: `Firebase Hosting Admin`
-- ou use um token gerado via `firebase login:ci`
+**Solução:** Verifique se a service account tem as roles necessárias:
+- `Firebase Hosting Admin` (`roles/firebasehosting.admin`)
+- `Service Account User` (`roles/iam.serviceAccountUser`)
+
+Verifique também se o JSON no GitHub Secret está completo e correto.
 
 ### Erro: "Project not found"
 

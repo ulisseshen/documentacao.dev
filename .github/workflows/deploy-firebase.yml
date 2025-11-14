@@ -32,13 +32,11 @@ jobs:
           export PATH="$PATH:$HOME/.pub-cache/bin"
           jaspr build
 
-      - name: Setup Firebase CLI
-        uses: w9jds/setup-firebase@v1.0.0
-        with:
-          firebase_token: ${{ secrets.FIREBASE_TOKEN }}
-
       - name: Deploy to Firebase Hosting
-        working-directory: ./src
-        run: firebase deploy --only hosting --project transliteradu
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: transliteradu
+          channelId: live
+          entryPoint: ./src
