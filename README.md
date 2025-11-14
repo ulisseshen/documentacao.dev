@@ -61,6 +61,17 @@ jaspr build
 
 Os arquivos compilados estarão em `src/build/jaspr/`
 
+### Deploy para Firebase Hosting
+
+Deploy automático configurado via GitHub Actions! 🚀
+
+```bash
+# Push para a branch main deploya automaticamente
+git push origin main
+```
+
+Veja o [Guia de Deploy](DEPLOYMENT.md) para instruções completas de configuração.
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -85,7 +96,11 @@ documentacao.dev/
 │   │   └── images/
 │   ├── pubspec.yaml       # Dependências
 │   └── analysis_options.yaml
+├── .github/
+│   └── workflows/
+│       └── deploy-firebase.yml  # GitHub Actions para deploy
 ├── README.md              # Este arquivo
+├── DEPLOYMENT.md          # Guia de deploy Firebase
 └── LICENSE               # Licença MIT
 ```
 

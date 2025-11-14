@@ -1,0 +1,44 @@
+name: Deploy to Firebase Hosting
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Dart SDK
+        uses: dart-lang/setup-dart@v1
+        with:
+          sdk: stable
+
+      - name: Install Jaspr CLI
+        run: dart pub global activate jaspr_cli
+
+      - name: Get dependencies
+        working-directory: ./src
+        run: dart pub get
+
+      - name: Build Jaspr project
+        working-directory: ./src
+        run: |
+          export PATH="$PATH:$HOME/.pub-cache/bin"
+          jaspr build
+
+      - name: Setup Firebase CLI
+        uses: w9jds/setup-firebase@v1.0.0
+        with:
+          firebase_token: ${{ secrets.FIREBASE_TOKEN }}
+
+      - name: Deploy to Firebase Hosting
+        working-directory: ./src
+        run: firebase deploy --only hosting --project transliteradu
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
