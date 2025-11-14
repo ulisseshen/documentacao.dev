@@ -164,7 +164,7 @@ jaspr serve
 
 ### Estrutura do Projeto
 
-```plaintext
+<pre>
 documentacao.dev/
 ├── content/          # Arquivos markdown da documentação
 │   ├── _data/       # Configurações YAML
@@ -174,7 +174,7 @@ documentacao.dev/
 │   └── main.dart    # Ponto de entrada
 ├── web/             # Assets estáticos
 └── pubspec.yaml     # Dependências
-```
+</pre>
 
 ### Fluxo de Trabalho
 

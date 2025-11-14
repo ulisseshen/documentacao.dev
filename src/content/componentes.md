@@ -312,7 +312,7 @@ class CartaoUsuario extends StatelessComponent {
 
 Crie uma biblioteca de componentes reutilizáveis:
 
-```plaintext
+<pre>
 lib/
 ├── components/
 │   ├── botoes/
@@ -324,7 +324,7 @@ lib/
 │   └── formularios/
 │       ├── input_texto.dart
 │       └── input_email.dart
-```
+</pre>
 
 ## Próximos Passos
 

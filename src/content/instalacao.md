@@ -62,7 +62,7 @@ cd meu-projeto
 
 Após criar o projeto, você terá a seguinte estrutura:
 
-```plaintext
+<pre>
 meu-projeto/
 ├── src/
 │   ├── index.js
@@ -71,7 +71,7 @@ meu-projeto/
 │   └── index.html
 ├── package.json
 └── README.md
-```
+</pre>
 
 ## Próximos Passos
 
