@@ -181,8 +181,13 @@ Este projeto é mantido pela comunidade e depende de doações para:
 
 ### Formas de Contribuir
 
-- ☕ **Buy Me a Coffee**: [buymeacoffee.com/documentacao](https://www.buymeacoffee.com/documentacao)
-- 💳 **PIX**: `documentacao@dev.com.br`
+- 💳 **PIX**: Escaneie o QR Code abaixo para doar
+
+<div align="center">
+  <img src="src/web/images/qrcode-pix.png" alt="QR Code PIX" width="300">
+  <p><em>Sua doação ajuda a manter este projeto vivo! 💚</em></p>
+</div>
+
 - 🔧 **Contribua com código**: Envie Pull Requests!
 - 📝 **Melhore traduções**: Ajude a revisar e melhorar
 - 🐛 **Reporte bugs**: Abra issues com sugestões
