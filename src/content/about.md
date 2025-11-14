@@ -74,8 +74,4 @@ Você mantém uma documentação técnica em PT-BR? Entre em contato para adicio
 - [{{name}}]({{url}})
 {{/site.social}}
 
----
-
-[Voltar para a página inicial](/)
-
 <CustomFooter/>

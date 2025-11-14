@@ -29,6 +29,4 @@ Suas doações ajudam a manter as traduções atualizadas e de qualidade para to
 
 Se você mantém ou conhece uma documentação técnica em PT-BR de qualidade, [entre em contato](/about) para adicioná-la ao catálogo!
 
----
-
 <CustomFooter/>
