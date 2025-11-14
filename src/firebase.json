@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "documentacaodev",
     "public": "build/jaspr",
     "ignore": [
       "firebase.json",

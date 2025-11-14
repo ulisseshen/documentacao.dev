@@ -55,8 +55,8 @@ O deploy acontece automaticamente quando:
 ### Deploy de Produção (main)
 
 Quando você faz push para a branch `main`, o site é deployado para produção em:
-- `https://transliteradu.web.app`
-- `https://transliteradu.firebaseapp.com`
+- `https://documentacaodev.web.app`
+- `https://documentacaodev.firebaseapp.com`
 
 ### Deploy de Preview (Pull Requests)
 
