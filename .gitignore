@@ -1,23 +1,8 @@
-# Dart & Jaspr
-
-# Files and directories created by pub.
-.dart_tool/
-.packages
-.pub/
-build/
-pubspec.lock
-
-# Conventional directory for build outputs.
-dist/
-
-# Omit committing pubspec.lock for library packages; see
-# https://dart.dev/guides/libraries/private-files#pubspeclock.
-# pubspec.lock
-
-# Generated files
-*.g.dart
-*.freezed.dart
-*.mocks.dart
+# Jaspr build output
+src/.dart_tool/
+src/.packages
+src/build/
+src/pubspec.lock
 
 # IDE
 .idea/
@@ -25,12 +10,10 @@ dist/
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
+Thumbs.db
 
-# Web build output
-web/main.dart.js
-web/main.dart.js.map
-
-# Test coverage
-coverage/
-.test_coverage/
+# Logs
+*.log

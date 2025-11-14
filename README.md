@@ -20,74 +20,137 @@ O **Documentação.dev** é uma iniciativa da comunidade brasileira para fornece
 
 ## 🚀 Como Usar
 
-### Visualizar Localmente
+### Pré-requisitos
+
+- [Dart SDK](https://dart.dev/get-dart) (3.8.0 ou superior)
+- [Jaspr CLI](https://jaspr.site/) (instalado globalmente)
+
+### Instalação
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/documentacao.dev.git
+git clone https://github.com/ulisseshen/documentacao.dev.git
 cd documentacao.dev
 ```
 
-2. Abra o arquivo `index.html` no seu navegador ou use um servidor local:
-
+2. Navegue até a pasta `src` e instale as dependências:
 ```bash
-# Usando Python 3
-python -m http.server 8000
-
-# Usando Node.js (http-server)
-npx http-server
-
-# Usando PHP
-php -S localhost:8000
+cd src
+dart pub get
 ```
 
-3. Acesse `http://localhost:8000` no seu navegador
+### Desenvolvimento Local
+
+Para iniciar o servidor de desenvolvimento com hot-reload:
+
+```bash
+cd src
+jaspr serve
+```
+
+O site estará disponível em `http://localhost:8080`
+
+### Build para Produção
+
+Para criar uma versão otimizada para produção:
+
+```bash
+cd src
+jaspr build
+```
+
+Os arquivos compilados estarão em `src/build/jaspr/`
 
 ## 📁 Estrutura do Projeto
 
 ```
 documentacao.dev/
-├── index.html          # Página principal
-├── styles.css          # Estilos e temas
-├── script.js           # Funcionalidades interativas
-├── README.md           # Este arquivo
-└── LICENSE            # Licença MIT
+├── src/                    # Aplicação Jaspr
+│   ├── content/           # Conteúdo markdown em PT-BR
+│   │   ├── _data/         # Configurações (site.yaml, links.yaml)
+│   │   ├── index.md       # Página inicial
+│   │   ├── instalacao.md  # Guia de instalação
+│   │   ├── conceitos.md   # Conceitos básicos
+│   │   ├── componentes.md # Guia de componentes
+│   │   ├── contribuir.md  # Como contribuir
+│   │   └── about.md       # Sobre o projeto
+│   ├── lib/               # Código Dart
+│   │   ├── components/    # Componentes customizados
+│   │   │   ├── donation_buttons.dart
+│   │   │   └── clicker.dart
+│   │   ├── main.dart      # Aplicação principal
+│   │   └── jaspr_options.dart
+│   ├── web/               # Assets estáticos
+│   │   ├── favicon.ico
+│   │   └── images/
+│   ├── pubspec.yaml       # Dependências
+│   └── analysis_options.yaml
+├── README.md              # Este arquivo
+└── LICENSE               # Licença MIT
 ```
 
 ## 🎨 Personalização
 
-### Cores e Temas
+### Cores e Tema
 
-As cores podem ser personalizadas editando as variáveis CSS em `styles.css`:
+As cores do tema podem ser personalizadas em `src/lib/main.dart`:
 
-```css
-:root {
-    --accent-color: #00D9FF;
-    --accent-hover: #00b8d4;
-    /* ... outras variáveis */
-}
+```dart
+theme: ContentTheme(
+  primary: ThemeColor(ThemeColors.cyan.$400, dark: ThemeColors.cyan.$400),
+  background: ThemeColor(ThemeColors.slate.$50, dark: ThemeColors.zinc.$950),
+),
 ```
 
 ### Adicionando Conteúdo
 
-Para adicionar novas seções de documentação:
+Para adicionar novas páginas de documentação:
 
-1. Adicione uma nova `<section>` em `index.html`:
-```html
-<section id="nova-secao">
-    <h2>Nova Seção</h2>
-    <p>Conteúdo aqui...</p>
-</section>
+1. Crie um novo arquivo markdown em `src/content/`:
+```markdown
+---
+title: Nova Seção
+description: Descrição da nova seção
+---
+
+# Nova Seção
+
+Conteúdo aqui...
 ```
 
-2. Adicione o link na navegação lateral:
-```html
-<li><a href="#nova-secao">Nova Seção</a></li>
+2. Adicione o link na navegação em `src/lib/main.dart`:
+```dart
+SidebarGroup(title: 'Guias', links: [
+  SidebarLink(text: "Nova Seção", href: '/nova-secao'),
+]),
 ```
 
-3. Adicione ao array de busca em `script.js`:
-```javascript
-{ title: 'Nova Seção', section: 'nova-secao', content: 'palavras-chave' }
+### Criando Componentes Customizados
+
+Crie novos componentes em `src/lib/components/`:
+
+```dart
+import 'package:jaspr/jaspr.dart';
+
+class MeuComponente extends StatelessComponent {
+  @override
+  Component build(BuildContext context) {
+    return div([
+      text('Olá, Mundo!'),
+    ]);
+  }
+}
+```
+
+E registre em `src/lib/main.dart`:
+
+```dart
+components: [
+  CustomComponent(
+    pattern: 'MeuComponente',
+    builder: (_, __, ___) => MeuComponente(),
+  ),
+],
 ```
 
 ## 💝 Como Apoiar
@@ -126,10 +189,11 @@ Contribuições são muito bem-vindas! Veja como você pode ajudar:
 
 ## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (Variables, Grid, Flexbox)
-- JavaScript (ES6+)
-- Google Fonts (Inter, JetBrains Mono)
+- **Dart** - Linguagem de programação
+- **Jaspr** - Framework Dart para web (similar ao Flutter)
+- **Jaspr Content** - Sistema de documentação baseado em markdown
+- **Markdown** - Para escrita de conteúdo
+- **YAML** - Para configurações
 
 ## 📄 Licença
 
@@ -137,9 +201,9 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ## 🌍 Comunidade
 
-- **GitHub**: [github.com/seu-usuario/documentacao.dev](https://github.com/seu-usuario/documentacao.dev)
-- **Discord**: Em breve
-- **Twitter**: Em breve
+- **GitHub**: [github.com/ulisseshen/documentacao.dev](https://github.com/ulisseshen/documentacao.dev)
+- **Discord**: [discord.gg/documentacao](https://discord.gg/documentacao)
+- **Twitter**: [@documentacaodev](https://twitter.com/documentacaodev)
 
 ## 🙏 Agradecimentos
 
