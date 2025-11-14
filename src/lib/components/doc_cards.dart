@@ -93,6 +93,11 @@ class DocCards extends StatelessComponent {
   margin: 2rem 0;
 }
 
+.doc-cards-grid > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .doc-card {
   position: relative;
   display: flex;
@@ -152,7 +157,7 @@ class DocCards extends StatelessComponent {
 .doc-card-title {
   font-size: 1.25rem;
   font-weight: 700;
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.125rem 0;
   color: #1e40af;
 }
 
