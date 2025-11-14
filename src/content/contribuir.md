@@ -265,8 +265,7 @@ Ao contribuir, você concorda que suas contribuições serão licenciadas sob a 
 
 ## 💬 Precisa de Ajuda?
 
-*   💬 Entre no nosso [Discord](https://discord.gg/documentacao)
-*   🐦 Siga-nos no [Twitter](https://twitter.com/documentacaodev)
+*   💼 Conecte-se no [LinkedIn](https://www.linkedin.com/in/ulisseshen/)
 *   📧 Envie um email para: contato@documentacao.dev
 
 ## 🙏 Agradecimentos
