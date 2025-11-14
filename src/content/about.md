@@ -3,6 +3,8 @@ title: Sobre o Projeto
 description: Conheça o catálogo Documentação.dev
 ---
 
+<GlobalStyles/>
+
 # Sobre o Documentação.dev
 
 O **Documentação.dev** é um catálogo centralizado de documentações técnicas em Português Brasileiro, facilitando o acesso a recursos de qualidade para desenvolvedores brasileiros.
