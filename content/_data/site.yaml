@@ -1,0 +1,12 @@
+# Site Configuration
+titleBase: Documentação.dev
+favicon: favicon.ico
+
+# Social media links
+social:
+  - name: Github
+    url: https://github.com/ulisseshen/documentacao.dev
+  - name: Discord
+    url: https://discord.gg/documentacao
+  - name: Twitter
+    url: https://twitter.com/documentacaodev
