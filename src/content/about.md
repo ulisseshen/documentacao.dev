@@ -83,3 +83,5 @@ Você mantém uma documentação técnica em PT-BR? Entre em contato para adicio
 **Feito com ❤️ pela comunidade brasileira de desenvolvedores**
 
 [Voltar para a página inicial](/)
+
+<CustomFooter/>

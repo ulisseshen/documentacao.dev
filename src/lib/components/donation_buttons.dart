@@ -198,7 +198,8 @@ document.addEventListener('DOMContentLoaded', function() {
 .qr-code {
   max-width: 100%;
   height: auto;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  display: block;
   border-radius: 8px;
 }
 

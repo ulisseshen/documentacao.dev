@@ -217,6 +217,12 @@ Contribuições são muito bem-vindas! Veja como você pode ajudar:
 - **Markdown** - Para escrita de conteúdo
 - **YAML** - Para configurações
 
+<div align="center">
+  <a href="https://github.com/schultek/jaspr" target="_blank">
+    <img src="src/web/images/jaspr-logo.svg" alt="Feito com Jaspr" width="106" height="40">
+  </a>
+</div>
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.

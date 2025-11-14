@@ -57,3 +57,5 @@ Se você mantém ou conhece uma documentação técnica em PT-BR de qualidade, [
 ---
 
 **Feito com ❤️ pela comunidade brasileira de desenvolvedores**
+
+<CustomFooter/>
