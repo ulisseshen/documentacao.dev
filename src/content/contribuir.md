@@ -63,6 +63,30 @@ Ajude a melhorar a qualidade das traduções existentes!
 | Render | Renderizar |
 | Build | Construir |
 
+## 🌐 Solicitar Novas Traduções
+
+Precisa da tradução de uma documentação específica que ainda não está disponível?
+
+### Como Solicitar
+
+[**📝 Clique aqui para solicitar uma tradução**](https://github.com/ulisseshen/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+)
+
+Ao solicitar uma tradução, você precisará fornecer:
+
+*   **Título da documentação original** - Nome completo do documento
+*   **Link da documentação original** - URL direta para a documentação
+*   **Tipo de documentação** - Framework, linguagem, ferramenta, etc.
+*   **Justificativa** - Por que esta tradução é importante para a comunidade
+*   **Prioridade** - Urgência da solicitação
+
+<Info>
+  **Importante:** Antes de solicitar, verifique se a tradução já não foi solicitada nas [issues abertas](https://github.com/ulisseshen/documentacao.dev/issues?q=is%3Aissue+is%3Aopen+label%3Atradução).
+</Info>
+
+### Você Pode Ajudar?
+
+Se você pode contribuir com a tradução solicitada, marque a opção correspondente no formulário. Traduções colaborativas são sempre bem-vindas!
+
 ## 📝 Adicionar Conteúdo
 
 Quer adicionar novos artigos ou expandir os existentes?

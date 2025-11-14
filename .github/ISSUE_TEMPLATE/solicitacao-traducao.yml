@@ -1,0 +1,128 @@
+name: 📝 Solicitação de Tradução
+description: Solicite a tradução de uma documentação técnica para Português do Brasil
+title: "[Tradução] "
+labels: ["tradução", "documentação"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📚 Solicitação de Tradução de Documentação
+
+        Obrigado por contribuir com o projeto! Use este formulário para solicitar a tradução de documentações técnicas para Português do Brasil.
+
+        **Antes de prosseguir:**
+        - ✅ Verifique se a tradução já não foi solicitada nas [issues abertas](https://github.com/ulisseshen/documentacao.dev/issues)
+        - ✅ Confirme que a documentação original está disponível publicamente
+        - ✅ Certifique-se de que a tradução agregará valor à comunidade brasileira
+
+  - type: input
+    id: doc-title
+    attributes:
+      label: 📖 Título da Documentação Original
+      description: Qual é o nome/título da documentação que você gostaria de ver traduzida?
+      placeholder: "Ex: React Documentation - Hooks"
+    validations:
+      required: true
+
+  - type: input
+    id: doc-link
+    attributes:
+      label: 🔗 Link da Documentação Original
+      description: Forneça o link completo para a documentação original
+      placeholder: "Ex: https://react.dev/reference/react/hooks"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: 📂 Tipo de Documentação
+      description: Qual é o tipo da documentação?
+      options:
+        - Framework/Biblioteca
+        - Linguagem de Programação
+        - Ferramenta/CLI
+        - API/Serviço
+        - Guia/Tutorial
+        - Outro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⚡ Prioridade
+      description: Qual a prioridade desta tradução para você?
+      options:
+        - 🔴 Alta - Preciso urgentemente
+        - 🟡 Média - Seria muito útil
+        - 🟢 Baixa - Quando possível
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: 💡 Justificativa
+      description: Por que esta tradução é importante? Como ela beneficiará a comunidade brasileira?
+      placeholder: |
+        Explique:
+        - Por que esta documentação é relevante
+        - Quem seria beneficiado com a tradução
+        - Qual o impacto esperado na comunidade
+    validations:
+      required: true
+
+  - type: textarea
+    id: sections
+    attributes:
+      label: 📑 Seções Específicas (Opcional)
+      description: Há alguma seção específica da documentação que você considera mais importante?
+      placeholder: |
+        Liste as seções ou páginas específicas que você gostaria de ver traduzidas primeiro:
+        - Seção 1
+        - Seção 2
+        - etc.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: ℹ️ Informações Adicionais
+      description: Há alguma informação adicional que devemos saber?
+      placeholder: |
+        Exemplos:
+        - Versão da documentação
+        - Licença da documentação original
+        - Se você pode ajudar na tradução
+        - Prazos ou eventos relevantes
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 🤝 Você pode contribuir com a tradução?
+      description: Marque as opções que se aplicam
+      options:
+        - label: Posso ajudar a traduzir esta documentação
+          required: false
+        - label: Posso ajudar a revisar a tradução
+          required: false
+        - label: Apenas solicitando, não posso contribuir no momento
+          required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ✅ Confirmação
+      description: Ao enviar esta solicitação, confirmo que
+      options:
+        - label: Verifiquei que esta tradução não foi solicitada anteriormente
+          required: true
+        - label: A documentação original está disponível publicamente
+          required: true
+        - label: Li e concordo com as [diretrizes de contribuição](https://github.com/ulisseshen/documentacao.dev/blob/main/src/content/contribuir.md)
+          required: true

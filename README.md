@@ -197,6 +197,12 @@ Este projeto é mantido pela comunidade e depende de doações para:
 
 Contribuições são muito bem-vindas! Veja como você pode ajudar:
 
+### 🌐 Solicitar Tradução de Documentação
+
+Precisa de uma documentação traduzida? [**Clique aqui para solicitar uma tradução**](https://github.com/ulisseshen/documentacao.dev/issues/new?assignees=&labels=tradução%2Cdocumentação&template=solicitacao-traducao.yml&title=%5BTradução%5D+)
+
+### 💻 Contribuir com Código
+
 1. Faça um Fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
 3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
