@@ -24,9 +24,14 @@ Use sempre GitHub Secrets para armazenar informações sensíveis. Nunca commite
 6. Descrição: `Service account para deploy via GitHub Actions`
 7. Clique em **Create and Continue**
 8. Adicione as seguintes roles:
-   - **Firebase Hosting Admin** (`roles/firebasehosting.admin`)
-   - **Service Account User** (`roles/iam.serviceAccountUser`)
+   - **Firebase Admin** (`roles/firebase.admin`)
+   - **API Keys Admin** (`roles/serviceusage.apiKeysAdmin`)
 9. Clique em **Continue** → **Done**
+
+**Nota:** Se preferir permissões mais restritas, use estas roles alternativas:
+   - **Viewer** (`roles/viewer`) - Para `firebase.projects.get`
+   - **Firebase Hosting Admin** (`roles/firebasehosting.admin`) - Para hosting
+   - **Service Account User** (`roles/iam.serviceAccountUser`) - Para service accounts
 10. Na lista de service accounts, clique na que você criou
 11. Vá na aba **Keys**
 12. Clique em **Add Key** → **Create new key**
@@ -146,11 +151,27 @@ Após cada push para `main`:
 
 ## 🐛 Troubleshooting
 
-### Erro: "Permission denied"
+### Erro: "Permission denied" ou "Missing required permissions"
 
 **Solução:** Verifique se a service account tem as roles necessárias:
+
+**Opção 1 (Recomendada - Mais Simples):**
+- `Firebase Admin` (`roles/firebase.admin`)
+- `API Keys Admin` (`roles/serviceusage.apiKeysAdmin`)
+
+**Opção 2 (Mais Restritiva):**
+- `Viewer` (`roles/viewer`)
 - `Firebase Hosting Admin` (`roles/firebasehosting.admin`)
 - `Service Account User` (`roles/iam.serviceAccountUser`)
+
+**Como adicionar roles:**
+1. Google Cloud Console → IAM & Admin → IAM
+2. Encontre a service account `github-actions-deploy@...`
+3. Clique em Edit (ícone de lápis)
+4. Adicione as roles necessárias
+5. Salve as alterações
+6. **Importante:** Gere uma nova chave JSON após adicionar as roles
+7. Atualize o secret `FIREBASE_SERVICE_ACCOUNT` no GitHub
 
 Verifique também se o JSON no GitHub Secret está completo e correto.
 
