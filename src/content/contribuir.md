@@ -23,7 +23,7 @@ Encontrou um erro ou problema na documentação?
 
 ### Exemplo de um Bom Report
 
-```markdown
+```
 **Página:** /conceitos
 **Problema:** Link quebrado na seção "Estado"
 **Esperado:** Link deveria levar para /componentes
@@ -69,7 +69,7 @@ Quer adicionar novos artigos ou expandir os existentes?
 
 ### Estrutura de um Artigo
 
-```markdown
+```
 ---
 title: Título do Artigo
 description: Breve descrição do conteúdo
@@ -143,20 +143,20 @@ Suas doações nos ajudam a:
 
 1.  Clone o repositório:
 
-```bash
+```
 git clone https://github.com/ulisseshen/documentacao.dev.git
 cd documentacao.dev
 ```
 
 2.  Instale as dependências:
 
-```bash
+```
 dart pub get
 ```
 
 3.  Inicie o servidor de desenvolvimento:
 
-```bash
+```
 jaspr serve
 ```
 
@@ -180,7 +180,7 @@ documentacao.dev/
 
 1.  Crie uma branch para sua feature:
 
-```bash
+```
 git checkout -b feature/minha-feature
 ```
 
@@ -188,20 +188,20 @@ git checkout -b feature/minha-feature
 
 3.  Teste localmente:
 
-```bash
+```
 jaspr serve
 ```
 
 4.  Commit suas mudanças:
 
-```bash
+```
 git add .
 git commit -m "Adiciona [descrição]"
 ```
 
 5.  Push para o GitHub:
 
-```bash
+```
 git push origin feature/minha-feature
 ```
 

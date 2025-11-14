@@ -19,19 +19,19 @@ Antes de começar, certifique-se de que você tem o seguinte instalado:
 
 ### Usando npm
 
-```bash
+```
 npm install @exemplo/pacote
 ```
 
 ### Usando yarn
 
-```bash
+```
 yarn add @exemplo/pacote
 ```
 
 ### Usando pnpm
 
-```bash
+```
 pnpm add @exemplo/pacote
 ```
 
@@ -43,7 +43,7 @@ pnpm add @exemplo/pacote
 
 Após a instalação, você pode verificar se tudo está funcionando corretamente:
 
-```bash
+```
 npx exemplo --version
 ```
 
@@ -53,7 +53,7 @@ Se a instalação foi bem-sucedida, você verá a versão instalada.
 
 Crie um novo projeto usando o comando:
 
-```bash
+```
 npx create-exemplo meu-projeto
 cd meu-projeto
 ```
@@ -87,7 +87,7 @@ Agora que você instalou tudo, você pode:
 
 Se você encontrar erros de permissão ao instalar pacotes globalmente, tente:
 
-```bash
+```
 sudo npm install -g @exemplo/pacote
 ```
 
@@ -95,7 +95,7 @@ sudo npm install -g @exemplo/pacote
 
 Certifique-se de estar usando Node.js versão 18 ou superior:
 
-```bash
+```
 node --version
 ```
 
