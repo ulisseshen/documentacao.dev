@@ -70,6 +70,8 @@ Deploy automático configurado via GitHub Actions! 🚀
 git push origin main
 ```
 
+**PR Previews**: Ao abrir um Pull Request, um deploy de preview é criado automaticamente e o bot comenta no PR com a URL. O comentário é atualizado em cada novo commit (sem duplicatas)!
+
 Veja o [Guia de Deploy](DEPLOYMENT.md) para instruções completas de configuração.
 
 ## 📁 Estrutura do Projeto

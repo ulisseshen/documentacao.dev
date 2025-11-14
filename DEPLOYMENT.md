@@ -48,8 +48,23 @@ Use sempre GitHub Secrets para armazenar informações sensíveis. Nunca commite
 
 O deploy acontece automaticamente quando:
 
-- ✅ Você faz push para a branch `main`
+- ✅ Você faz push para a branch `main` (deploy em produção)
+- ✅ Você abre ou atualiza um Pull Request (deploy de preview)
 - ✅ Você executa manualmente via GitHub Actions
+
+### Deploy de Produção (main)
+
+Quando você faz push para a branch `main`, o site é deployado para produção em:
+- `https://transliteradu.web.app`
+- `https://transliteradu.firebaseapp.com`
+
+### Deploy de Preview (Pull Requests)
+
+Quando você abre ou atualiza um Pull Request:
+- 🚀 Um deploy de preview é criado automaticamente
+- 💬 O bot comenta no PR com a URL do preview
+- 🔄 **O comentário é atualizado** automaticamente em cada novo commit (não cria comentários duplicados)
+- 🗑️ O preview é deletado quando o PR é fechado ou mergeado
 
 ### Workflow
 
