@@ -312,7 +312,7 @@ class CartaoUsuario extends StatelessComponent {
 
 Crie uma biblioteca de componentes reutilizáveis:
 
-```text
+```plaintext
 lib/
 ├── components/
 │   ├── botoes/
