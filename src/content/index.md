@@ -3,6 +3,8 @@ title: Bem-vindo
 description: Catálogo de Documentações em Português Brasileiro
 ---
 
+<GlobalStyles/>
+
 # Documentação.dev 🇧🇷
 
 **Seu catálogo de documentações técnicas em Português Brasileiro**
@@ -55,3 +57,5 @@ Se você mantém ou conhece uma documentação técnica em PT-BR de qualidade, [
 ---
 
 **Feito com ❤️ pela comunidade brasileira de desenvolvedores**
+
+<CustomFooter/>

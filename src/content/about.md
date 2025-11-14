@@ -3,6 +3,8 @@ title: Sobre o Projeto
 description: Conheça o catálogo Documentação.dev
 ---
 
+<GlobalStyles/>
+
 # Sobre o Documentação.dev
 
 O **Documentação.dev** é um catálogo centralizado de documentações técnicas em Português Brasileiro, facilitando o acesso a recursos de qualidade para desenvolvedores brasileiros.
@@ -50,7 +52,9 @@ Este site foi construído com:
 *   **Dart** - Linguagem de programação
 *   **Firebase Hosting** - Hospedagem
 
-[![Built with Jaspr](https://img.shields.io/badge/Built%20with-Jaspr-00D4AA?style=for-the-badge&logo=dart&logoColor=white)](https://github.com/schultek/jaspr)
+<a href="https://github.com/schultek/jaspr" target="_blank">
+<img src="/images/jaspr-logo.svg" alt="Built with Jaspr" width="106" height="40">
+</a>
 
 ## 💝 Como Apoiar
 
@@ -79,3 +83,5 @@ Você mantém uma documentação técnica em PT-BR? Entre em contato para adicio
 **Feito com ❤️ pela comunidade brasileira de desenvolvedores**
 
 [Voltar para a página inicial](/)
+
+<CustomFooter/>
