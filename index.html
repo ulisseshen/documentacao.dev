@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentação em Português do Brasil - Traduções de documentação técnica">
+    <title>Documentação.dev - Documentação em Português</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="6" fill="#00D9FF"/>
+                    <path d="M8 12H24M8 16H24M8 20H18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Documentação.dev</span>
+            </div>
+            <nav class="nav-actions">
+                <button class="search-btn" id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M14 14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Buscar
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                        <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.66 15.66L14.24 14.24M5.76 5.76L4.34 4.34M15.66 4.34L14.24 5.76M5.76 14.24L4.34 15.66" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M17 10.5C16.8 14.6 13.4 18 9.3 18C5.8 18 2.9 15.6 2.1 12.3C2 11.8 2 11.3 2 10.8C2 6.1 5.8 2.3 10.5 2C11 2 11.5 2.1 12 2.2C8.7 3.5 6.3 6.7 6.3 10.5C6.3 15.2 10.1 19 14.8 19C15.6 19 16.3 18.9 17 18.7C17 18.7 17 10.5 17 10.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>Menu</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h4>Começando</h4>
+                    <ul>
+                        <li><a href="#introducao" class="active">Introdução</a></li>
+                        <li><a href="#instalacao">Instalação</a></li>
+                        <li><a href="#guia-rapido">Guia Rápido</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h4>Guias</h4>
+                    <ul>
+                        <li><a href="#conceitos">Conceitos Básicos</a></li>
+                        <li><a href="#componentes">Componentes</a></li>
+                        <li><a href="#styling">Estilização</a></li>
+                        <li><a href="#state">Gerenciamento de Estado</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h4>API</h4>
+                    <ul>
+                        <li><a href="#api-reference">Referência da API</a></li>
+                        <li><a href="#hooks">Hooks</a></li>
+                        <li><a href="#utilities">Utilitários</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#exemplos">Exemplos</a></li>
+                        <li><a href="#comunidade">Comunidade</a></li>
+                        <li><a href="#contribuir">Como Contribuir</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Donation Section in Sidebar -->
+            <div class="sidebar-footer">
+                <div class="donation-card">
+                    <h4>Apoie o Projeto</h4>
+                    <p>Ajude-nos a manter as traduções atualizadas!</p>
+                    <div class="donation-buttons">
+                        <a href="https://www.buymeacoffee.com/documentacao" target="_blank" class="btn-donate btn-coffee">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 6H16M4 6V14C4 15.1046 4.89543 16 6 16H12C13.1046 16 14 15.1046 14 14V6M4 6L5 4H15L16 6M16 8H17C17.5523 8 18 8.44772 18 9V10C18 10.5523 17.5523 11 17 11H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Buy Me a Coffee
+                        </a>
+                        <a href="#" target="_blank" class="btn-donate btn-pix">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M10 2L18 10L10 18L2 10L10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            </svg>
+                            Doar via PIX
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <article class="documentation">
+                <section id="introducao">
+                    <h1>Bem-vindo à Documentação.dev</h1>
+                    <p class="lead">Uma plataforma dedicada a fornecer documentação técnica de alta qualidade em Português do Brasil.</p>
+
+                    <div class="info-banner">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 8V12M12 16H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <strong>Sobre este projeto</strong>
+                            <p>Esta documentação é mantida pela comunidade. Todas as doações são utilizadas para manter as traduções atualizadas e de alta qualidade.</p>
+                        </div>
+                    </div>
+
+                    <h2>Por que usar documentação em português?</h2>
+                    <p>Acreditamos que documentação de qualidade na sua língua nativa pode:</p>
+                    <ul>
+                        <li>Acelerar o aprendizado de novas tecnologias</li>
+                        <li>Reduzir barreiras de entrada para novos desenvolvedores</li>
+                        <li>Fortalecer a comunidade brasileira de desenvolvimento</li>
+                        <li>Tornar o conhecimento mais acessível a todos</li>
+                    </ul>
+                </section>
+
+                <section id="instalacao">
+                    <h2>Instalação</h2>
+                    <p>Para começar, você pode instalar o pacote usando seu gerenciador de pacotes favorito:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">bash</span>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <rect x="5" y="5" width="9" height="9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M11 5V2H2V11H5" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <pre><code>npm install @exemplo/pacote
+# ou
+yarn add @exemplo/pacote
+# ou
+pnpm add @exemplo/pacote</code></pre>
+                    </div>
+                </section>
+
+                <section id="guia-rapido">
+                    <h2>Guia Rápido</h2>
+                    <p>Veja um exemplo básico de como começar:</p>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-language">javascript</span>
+                            <button class="copy-btn" onclick="copyCode(this)">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <rect x="5" y="5" width="9" height="9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M11 5V2H2V11H5" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                                Copiar
+                            </button>
+                        </div>
+                        <pre><code>import { criar } from '@exemplo/pacote';
+
+// Crie sua primeira instância
+const app = criar({
+  nome: 'Minha Aplicação',
+  versao: '1.0.0'
+});
+
+// Inicie a aplicação
+app.iniciar();</code></pre>
+                    </div>
+
+                    <div class="tip-box">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 2L12.3 7.3L18 8L14 12L15 18L10 15L5 18L6 12L2 8L7.7 7.3L10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                        <div>
+                            <strong>Dica</strong>
+                            <p>Você pode personalizar todas as opções conforme sua necessidade. Veja a seção de <a href="#api-reference">Referência da API</a> para mais detalhes.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="conceitos">
+                    <h2>Conceitos Básicos</h2>
+                    <p>Entenda os conceitos fundamentais antes de começar a desenvolver:</p>
+
+                    <div class="concept-grid">
+                        <div class="concept-card">
+                            <h3>Componentes</h3>
+                            <p>Blocos de construção reutilizáveis que encapsulam lógica e apresentação.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Estado</h3>
+                            <p>Dados que mudam ao longo do tempo e afetam a renderização da interface.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Props</h3>
+                            <p>Propriedades passadas de componentes pais para filhos.</p>
+                        </div>
+                        <div class="concept-card">
+                            <h3>Ciclo de Vida</h3>
+                            <p>Métodos que são chamados em diferentes fases da existência de um componente.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contribuir">
+                    <h2>Como Contribuir</h2>
+                    <p>Esta documentação é mantida pela comunidade! Existem várias formas de contribuir:</p>
+
+                    <ol>
+                        <li><strong>Reportar erros:</strong> Encontrou algum erro de tradução ou informação desatualizada? Abra uma issue!</li>
+                        <li><strong>Melhorar traduções:</strong> Ajude a melhorar a qualidade das traduções existentes.</li>
+                        <li><strong>Adicionar exemplos:</strong> Contribua com exemplos práticos e casos de uso.</li>
+                        <li><strong>Doar:</strong> Apoie financeiramente para mantermos as traduções sempre atualizadas.</li>
+                    </ol>
+
+                    <div class="donation-section">
+                        <h3>Apoie Este Projeto</h3>
+                        <p>Manter documentação traduzida e atualizada requer tempo e dedicação. Suas doações nos ajudam a:</p>
+                        <ul>
+                            <li>Manter as traduções sincronizadas com as versões originais</li>
+                            <li>Melhorar a qualidade das traduções existentes</li>
+                            <li>Adicionar documentação de novas tecnologias</li>
+                            <li>Cobrir custos de hospedagem e infraestrutura</li>
+                        </ul>
+
+                        <div class="donation-buttons-main">
+                            <a href="https://www.buymeacoffee.com/documentacao" target="_blank" class="btn-donate-large btn-coffee">
+                                <svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+                                    <path d="M4 6H16M4 6V14C4 15.1046 4.89543 16 6 16H12C13.1046 16 14 15.1046 14 14V6M4 6L5 4H15L16 6M16 8H17C17.5523 8 18 8.44772 18 9V10C18 10.5523 17.5523 11 17 11H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <div>
+                                    <strong>Buy Me a Coffee</strong>
+                                    <span>Apoie com qualquer valor</span>
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="btn-donate-large btn-pix">
+                                <svg width="24" height="24" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 2L18 10L10 18L2 10L10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                                </svg>
+                                <div>
+                                    <strong>Doar via PIX</strong>
+                                    <span>Forma rápida e brasileira</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>Feito com ❤️ pela comunidade brasileira de desenvolvedores</p>
+                <p class="footer-links">
+                    <a href="#">GitHub</a> •
+                    <a href="#">Twitter</a> •
+                    <a href="#">Discord</a>
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <div class="search-input-wrapper">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                    <path d="M14 14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Buscar na documentação..." autofocus>
+                <button class="search-close" id="searchClose">ESC</button>
+            </div>
+            <div class="search-results" id="searchResults">
+                <p class="search-hint">Digite para buscar na documentação</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
