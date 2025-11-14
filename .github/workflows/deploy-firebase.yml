@@ -27,11 +27,18 @@ jobs:
         working-directory: ./src
         run: dart pub get
 
+      - name: Clean build cache
+        working-directory: ./src
+        run: |
+          # Clean any stale build artifacts
+          rm -rf .dart_tool/build
+          rm -rf build
+
       - name: Build Jaspr project
         working-directory: ./src
         run: |
           export PATH="$PATH:$HOME/.pub-cache/bin"
-          jaspr build
+          jaspr build --verbose
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
