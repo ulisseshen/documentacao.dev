@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+![Feito com Jaspr](https://img.shields.io/badge/Feito_com-Jaspr-3178C6?logo=dart)
 
 ## 🌟 Sobre o Projeto
 
