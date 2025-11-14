@@ -78,20 +78,12 @@ void main() {
         sidebar: Sidebar(groups: [
           // Adds navigation links to the sidebar.
           SidebarGroup(
-            title: 'Começando',
+            title: 'Catálogo',
             links: [
-              SidebarLink(text: "Introdução", href: '/'),
-              SidebarLink(text: "Instalação", href: '/instalacao'),
+              SidebarLink(text: "Início", href: '/'),
+              SidebarLink(text: "Sobre o Projeto", href: '/about'),
             ],
           ),
-          SidebarGroup(title: 'Guias', links: [
-            SidebarLink(text: "Conceitos Básicos", href: '/conceitos'),
-            SidebarLink(text: "Componentes", href: '/componentes'),
-          ]),
-          SidebarGroup(title: 'Comunidade', links: [
-            SidebarLink(text: "Sobre", href: '/about'),
-            SidebarLink(text: "Como Contribuir", href: '/contribuir'),
-          ]),
         ]),
       ),
     ],

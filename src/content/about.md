@@ -1,57 +1,72 @@
 ---
-title: Sobre
-description: Conheça mais sobre o projeto Documentação.dev
+title: Sobre o Projeto
+description: Conheça o catálogo Documentação.dev
 ---
 
-# Sobre o Projeto
+# Sobre o Documentação.dev
 
-O **Documentação.dev** é uma iniciativa da comunidade brasileira de desenvolvedores para fornecer documentação técnica de alta qualidade em Português do Brasil.
+O **Documentação.dev** é um catálogo centralizado de documentações técnicas em Português Brasileiro, facilitando o acesso a recursos de qualidade para desenvolvedores brasileiros.
 
 ## 🎯 Nossa Missão
 
-Quebrar a barreira do idioma e democratizar o acesso ao conhecimento em tecnologia, tornando-o mais acessível para desenvolvedores brasileiros de todos os níveis.
+Reunir e organizar documentações técnicas em PT-BR, tornando mais fácil para desenvolvedores brasileiros encontrarem recursos de aprendizado em sua língua nativa.
 
 ## 🌟 Por que este projeto existe?
 
 Acreditamos que:
 
-*   📚 Documentação em português acelera o aprendizado
+*   📚 Ter documentação em português acelera o aprendizado
 *   🚀 Reduz barreiras para iniciantes na programação
 *   💪 Fortalece a comunidade tech brasileira
-*   🌍 Torna o conhecimento mais inclusivo e acessível
+*   🌍 Torna o conhecimento mais acessível a todos
+
+## 📋 O que catalogamos?
+
+Incluímos documentações que sejam:
+
+*   ✅ **Em Português Brasileiro** - Traduções completas e de qualidade
+*   ✅ **Mantidas ativamente** - Projetos com atualizações regulares
+*   ✅ **De tecnologias relevantes** - Ferramentas e frameworks amplamente utilizados
+*   ✅ **Acessíveis** - Disponíveis gratuitamente online
 
 ## 👥 Quem Mantém
 
-Este projeto é mantido por **voluntários da comunidade**. Cada contribuição, seja código, tradução ou doação, ajuda a manter este recurso disponível para todos.
+Este projeto é mantido por **voluntários da comunidade brasileira**.
 
-### Principais Contribuidores
+### Projetos Catalogados
 
-Agradecemos a todos que contribuem com seu tempo e conhecimento:
+Agradecemos aos mantenedores dos projetos listados:
 
-*   Tradutores voluntários
-*   Revisores técnicos
-*   Desenvolvedores
-*   Apoiadores financeiros
-
-[Ver todos os contribuidores →](https://github.com/ulisseshen/documentacao.dev/graphs/contributors)
+*   **FlutterBrasil** - Documentação Flutter em PT-BR
+*   **DartBrasil** - Documentação Dart em PT-BR
+*   E mais projetos em breve!
 
 ## 🛠️ Tecnologias
 
 Este site foi construído com:
 
 *   **Jaspr** - Framework Dart para web
-*   **Jaspr Content** - Sistema de documentação baseado em markdown
+*   **Jaspr Content** - Sistema de conteúdo baseado em markdown
 *   **Dart** - Linguagem de programação
+*   **Firebase Hosting** - Hospedagem
 
 ## 💝 Como Apoiar
 
-Existem várias formas de apoiar este projeto:
+Suas doações ajudam a manter este catálogo atualizado e a apoiar projetos de tradução:
 
 <DonationButtons/>
 
-## 📞 Contato
+## ➕ Adicionar Sua Documentação
 
-Entre em contato conosco:
+Você mantém uma documentação técnica em PT-BR? Entre em contato para adicioná-la ao catálogo!
+
+**Requisitos:**
+- Documentação completa em PT-BR
+- Projeto ativo e mantido
+- Qualidade técnica verificável
+- Hospedagem própria estável
+
+**Contato:**
 
 {{#site.social}}
 - [{{name}}]({{url}})
@@ -61,4 +76,4 @@ Entre em contato conosco:
 
 **Feito com ❤️ pela comunidade brasileira de desenvolvedores**
 
-[Voltar para a página inicial](/) | [Como contribuir](/contribuir)
+[Voltar para a página inicial](/)
