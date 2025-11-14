@@ -52,10 +52,6 @@ Este site foi construído com:
 *   **Dart** - Linguagem de programação
 *   **Firebase Hosting** - Hospedagem
 
-<a href="https://github.com/schultek/jaspr" target="_blank">
-<img src="/images/jaspr-logo.svg" alt="Built with Jaspr" width="106" height="40">
-</a>
-
 ## 💝 Como Apoiar
 
 Suas doações ajudam a manter este catálogo atualizado e a apoiar projetos de tradução:
@@ -77,11 +73,5 @@ Você mantém uma documentação técnica em PT-BR? Entre em contato para adicio
 {{#site.social}}
 - [{{name}}]({{url}})
 {{/site.social}}
-
----
-
-**Feito com ❤️ pela comunidade brasileira de desenvolvedores**
-
-[Voltar para a página inicial](/)
 
 <CustomFooter/>
