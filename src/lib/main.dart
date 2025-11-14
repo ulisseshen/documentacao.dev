@@ -17,6 +17,7 @@ import 'package:jaspr_content/jaspr_content.dart';
 import 'package:jaspr_content/theme.dart';
 
 import 'components/clicker.dart';
+import 'components/doc_cards.dart';
 import 'components/donation_buttons.dart';
 
 // This file is generated automatically by Jaspr, do not remove or edit.
@@ -58,6 +59,11 @@ void main() {
       CustomComponent(
         pattern: 'DonationButtons',
         builder: (_, __, ___) => DonationButtons(),
+      ),
+      // Adds documentation cards component to be used as <DocCards/> in markdown.
+      CustomComponent(
+        pattern: 'DocCards',
+        builder: (_, __, ___) => DocCards(),
       ),
       // Adds zooming and caption support to images.
       Image(zoom: true),
