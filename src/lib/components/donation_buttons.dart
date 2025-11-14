@@ -24,23 +24,60 @@ class DonationButtons extends StatelessComponent {
         div(
           classes: 'donation-buttons-grid',
           [
-            a(
-              href: 'https://www.buymeacoffee.com/documentacao',
-              target: Target.blank,
-              classes: 'donation-btn coffee-btn',
-              [
-                text('☕ Buy Me a Coffee'),
-              ],
-            ),
-            a(
-              href: '#',
+            // Comentado temporariamente - setup complicado
+            // a(
+            //   href: 'https://buymeacoffee.com/documentacaodev',
+            //   target: Target.blank,
+            //   classes: 'donation-btn coffee-btn',
+            //   [
+            //     text('☕ Buy Me a Coffee'),
+            //   ],
+            // ),
+            button(
               classes: 'donation-btn pix-btn',
+              id: 'pix-btn',
               [
                 text('💳 Doar via PIX'),
               ],
             ),
           ],
         ),
+        // Modal do QR Code Pix
+        raw('''
+<div id="pix-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>PIX - QR Code</h2>
+    <p>Escaneie o QR Code abaixo para doar:</p>
+    <img src="/images/qrcode-pix.png" alt="QR Code PIX" class="qr-code">
+    <p>Obrigado pelo seu apoio! 💚</p>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('pix-modal');
+  const btn = document.getElementById('pix-btn');
+  const span = document.getElementsByClassName('close')[0];
+
+  if (btn && modal && span) {
+    btn.onclick = function() {
+      modal.style.display = 'block';
+    }
+
+    span.onclick = function() {
+      modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  }
+});
+</script>
+'''),
         raw('''
 <style>
 .donation-section {
@@ -112,6 +149,64 @@ class DonationButtons extends StatelessComponent {
   .donation-buttons-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Modal do Pix */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  border-radius: 16px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  color: #00D9FF;
+  margin-top: 0;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+.qr-code {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Cursor pointer para o botão */
+.pix-btn {
+  cursor: pointer;
+  border: none;
 }
 </style>
 '''),

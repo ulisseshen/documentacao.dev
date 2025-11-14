@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+![Feito com Jaspr](https://img.shields.io/badge/Feito_com-Jaspr-3178C6?logo=dart)
 
 ## 🌟 Sobre o Projeto
 
@@ -181,8 +182,13 @@ Este projeto é mantido pela comunidade e depende de doações para:
 
 ### Formas de Contribuir
 
-- ☕ **Buy Me a Coffee**: [buymeacoffee.com/documentacao](https://www.buymeacoffee.com/documentacao)
-- 💳 **PIX**: `documentacao@dev.com.br`
+- 💳 **PIX**: Escaneie o QR Code abaixo para doar
+
+<div align="center">
+  <img src="src/web/images/qrcode-pix.png" alt="QR Code PIX" width="300">
+  <p><em>Sua doação ajuda a manter este projeto vivo! 💚</em></p>
+</div>
+
 - 🔧 **Contribua com código**: Envie Pull Requests!
 - 📝 **Melhore traduções**: Ajude a revisar e melhorar
 - 🐛 **Reporte bugs**: Abra issues com sugestões
@@ -229,3 +235,9 @@ Agradecemos a todos os contribuidores que ajudam a manter este projeto vivo e at
 ---
 
 Feito com ❤️ pela comunidade brasileira de desenvolvedores
+
+<div align="center">
+  <a href="https://github.com/schultek/jaspr" target="_blank">
+    <img src="src/web/images/jaspr-logo.svg" alt="Feito com Jaspr" width="106" height="40">
+  </a>
+</div>

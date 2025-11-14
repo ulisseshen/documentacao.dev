@@ -19,6 +19,8 @@ import 'package:jaspr_content/theme.dart';
 import 'components/clicker.dart';
 import 'components/doc_cards.dart';
 import 'components/donation_buttons.dart';
+import 'components/footer.dart';
+import 'components/global_styles.dart';
 
 // This file is generated automatically by Jaspr, do not remove or edit.
 import 'jaspr_options.dart';
@@ -64,6 +66,16 @@ void main() {
       CustomComponent(
         pattern: 'DocCards',
         builder: (_, __, ___) => DocCards(),
+      ),
+      // Adds global styles component to be used as <GlobalStyles/> in markdown.
+      CustomComponent(
+        pattern: 'GlobalStyles',
+        builder: (_, __, ___) => GlobalStyles(),
+      ),
+      // Adds custom footer component to be used as <CustomFooter/> in markdown.
+      CustomComponent(
+        pattern: 'CustomFooter',
+        builder: (_, __, ___) => CustomFooter(),
       ),
       // Adds zooming and caption support to images.
       Image(zoom: true),
