@@ -231,8 +231,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ## 🌍 Comunidade
 
 - **GitHub**: [github.com/ulisseshen/documentacao.dev](https://github.com/ulisseshen/documentacao.dev)
-- **Discord**: [discord.gg/documentacao](https://discord.gg/documentacao)
-- **Twitter**: [@documentacaodev](https://twitter.com/documentacaodev)
+- **LinkedIn**: [linkedin.com/in/ulisseshen](https://www.linkedin.com/in/ulisseshen/)
 
 ## 🙏 Agradecimentos
 
