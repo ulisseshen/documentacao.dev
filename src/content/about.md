@@ -50,6 +50,8 @@ Este site foi construído com:
 *   **Dart** - Linguagem de programação
 *   **Firebase Hosting** - Hospedagem
 
+[![Built with Jaspr](https://img.shields.io/badge/Built%20with-Jaspr-00D4AA?style=for-the-badge&logo=dart&logoColor=white)](https://github.com/schultek/jaspr)
+
 ## 💝 Como Apoiar
 
 Suas doações ajudam a manter este catálogo atualizado e a apoiar projetos de tradução:
