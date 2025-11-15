@@ -10,12 +10,12 @@ class GlobalStyles extends StatelessComponent {
 <style>
 /* Fix para âncoras que ficam escondidas atrás do appbar fixo */
 html {
-  scroll-padding-top: 10px;
+  scroll-padding-top: 64px;
 }
 
 /* Alternativa para navegadores mais antigos */
 :target {
-  scroll-margin-top: 10px;
+  scroll-margin-top: 64px;
 }
 
 /* Ajuste para headings que são alvos de âncoras */
@@ -25,7 +25,7 @@ h3:target,
 h4:target,
 h5:target,
 h6:target {
-  scroll-margin-top: 10px;
+  scroll-margin-top: 64px;
 }
 </style>
 ''');
