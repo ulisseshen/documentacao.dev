@@ -22,6 +22,18 @@ Acreditamos que:
 *   💪 Fortalece a comunidade tech brasileira
 *   🌍 Torna o conhecimento mais acessível a todos
 
+## 🎓 Nosso Objetivo Educacional
+
+**Importante:** Nosso objetivo não é que desenvolvedores usem estas documentações traduzidas no dia a dia, mas sim que ao fazer uso delas, possam **aprender inglês como uma habilidade essencial** para se tornarem bons programadores em um mundo dinâmico e globalizado.
+
+O domínio do inglês técnico é fundamental para:
+*   📖 Acessar documentações oficiais sempre atualizadas
+*   🌐 Participar de comunidades globais
+*   💼 Expandir oportunidades profissionais
+*   🚀 Acompanhar as últimas tendências e tecnologias
+
+As traduções servem como uma **ponte de aprendizado**, não como destino final.
+
 ## 📋 O que catalogamos?
 
 Incluímos documentações que sejam:

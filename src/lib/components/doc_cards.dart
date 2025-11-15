@@ -71,6 +71,34 @@ class DocCards extends StatelessComponent {
               badgeText: 'Em breve',
               accentColor: '#DD0031',
             ),
+            // React Native Card (Coming Soon)
+            _buildDocCard(
+              icon: _reactNativeIcon(),
+              title: 'React Native Brasil',
+              description: 'Documentação React Native em PT-BR',
+              features: [
+                'Framework para aplicativos mobile',
+                'Em desenvolvimento',
+                'Contribuições bem-vindas',
+              ],
+              url: null,
+              badgeText: 'Em breve',
+              accentColor: '#61DAFB',
+            ),
+            // Go Card (Coming Soon)
+            _buildDocCard(
+              icon: _goIcon(),
+              title: 'Go Brasil',
+              description: 'Documentação Go em PT-BR',
+              features: [
+                'Linguagem de programação moderna',
+                'Em desenvolvimento',
+                'Contribuições bem-vindas',
+              ],
+              url: null,
+              badgeText: 'Em breve',
+              accentColor: '#00ADD8',
+            ),
           ],
         ),
         raw('''
@@ -396,6 +424,35 @@ class DocCards extends StatelessComponent {
   <path d="M1 5.3L15.892 0l15.284 5.218-2.47 19.694L15.892 32 3.286 25.004 1 5.3z" fill="#e23237"/>
   <path d="M31.176 5.218L15.892 0v32l12.814-7.088 2.47-19.694z" fill="#b52e31"/>
   <path d="M15.915 3.74l-9.28 20.64 3.463-.07 1.87-4.664h8.3l2.032 4.7 3.302.07L15.915 3.74zm.023 6.626l3.14 6.557H13.2l2.747-6.557z" fill="#fff"/>
+</svg>
+''');
+  }
+
+  // React Native icon (official logo)
+  Component _reactNativeIcon() {
+    return raw('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <circle cx="16" cy="16" r="2.5" fill="#61dafb"/>
+  <g stroke="#61dafb" stroke-width="1" fill="none">
+    <ellipse cx="16" cy="16" rx="13" ry="5"/>
+    <ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"/>
+    <ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(120 16 16)"/>
+  </g>
+</svg>
+''');
+  }
+
+  // Go icon (official Gopher)
+  Component _goIcon() {
+    return raw('''
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="M14.5 3.5c-2.4 0-4.5 1.8-4.5 4.5v3c0 .8.7 1.5 1.5 1.5h6c.8 0 1.5-.7 1.5-1.5V8c0-2.7-2.1-4.5-4.5-4.5z" fill="#00acd7"/>
+  <circle cx="12.5" cy="8.5" r="1.2" fill="#000"/>
+  <circle cx="16.5" cy="8.5" r="1.2" fill="#000"/>
+  <path d="M9 11c-1.1 0-2 .9-2 2v1c0 .6.4 1 1 1h1.5c.3 0 .5-.2.5-.5V13c0-1.1-.9-2-2-2z" fill="#00acd7"/>
+  <path d="M20 11c1.1 0 2 .9 2 2v1c0 .6-.4 1-1 1h-1.5c-.3 0-.5-.2-.5-.5V13c0-1.1.9-2 2-2z" fill="#00acd7"/>
+  <path d="M14.5 13.5c-3.5 0-6.5 2.5-7 6-.5 3.5 1.5 7 5 8 3.5 1 7.5-.5 9-4 1.5-3.5.5-7.5-2-9.5-1-1-2.5-1.5-5-1.5z" fill="#00acd7"/>
+  <path d="M10 19c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1zm9 0c-.6 0-1 .4-1 1s.4 1 1 1 1-.4 1-1-.4-1-1-1z" fill="#fff"/>
 </svg>
 ''');
   }
