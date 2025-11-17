@@ -6,6 +6,19 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 ![Feito com Jaspr](https://img.shields.io/badge/Feito_com-Jaspr-3178C6?logo=dart)
 
+## 📋 Status das Traduções
+
+### ✅ Disponíveis
+[![Flutter](https://img.shields.io/badge/Flutter-Disponível-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutterbrasil.dev)
+[![Dart](https://img.shields.io/badge/Dart-Disponível-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dartbrasil.dev)
+[![Angular](https://img.shields.io/badge/Angular-Disponível-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angularbrasil.web.app)
+
+### 🔄 Em Processo
+![React Native](https://img.shields.io/badge/React_Native-Em_Processo-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+
+### 🔜 Em Breve
+![Go](https://img.shields.io/badge/Go-Em_Breve-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+
 ## 🌟 Sobre o Projeto
 
 O **Documentação.dev** é uma iniciativa da comunidade brasileira para fornecer documentação técnica traduzida e de alta qualidade em Português do Brasil. Acreditamos que quebrar a barreira do idioma é essencial para democratizar o acesso ao conhecimento em tecnologia.
