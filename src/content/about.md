@@ -59,7 +59,7 @@ Agradecemos aos mantenedores dos projetos listados:
 
 Este site foi construído com:
 
-*   **Jaspr** - Framework Dart para web
+*   **[Jaspr](https://jaspr.site/)** - Framework Dart para web
 *   **Jaspr Content** - Sistema de conteúdo baseado em markdown
 *   **Dart** - Linguagem de programação
 *   **Firebase Hosting** - Hospedagem
