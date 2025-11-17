@@ -182,7 +182,7 @@ Precisa de uma documentação traduzida? [**Clique aqui para solicitar uma tradu
 ## 🛠️ Tecnologias Utilizadas
 
 - **Dart** - Linguagem de programação
-- **Jaspr** - Framework Dart para web (similar ao Flutter)
+- **[Jaspr](https://jaspr.site/)** - Framework Dart para web (similar ao Flutter)
 - **Jaspr Content** - Sistema de documentação baseado em markdown
 - **Markdown** - Para escrita de conteúdo
 - **YAML** - Para configurações
@@ -205,7 +205,7 @@ Agradecemos a todos os contribuidores que ajudam a manter este projeto vivo e at
 Feito com ❤️ pela comunidade brasileira de desenvolvedores
 
 <div align="center">
-  <a href="https://github.com/schultek/jaspr" target="_blank">
+  <a href="https://jaspr.site/" target="_blank">
     <img src="src/web/images/jaspr-logo.svg" alt="Feito com Jaspr" width="106" height="40">
   </a>
 </div>
