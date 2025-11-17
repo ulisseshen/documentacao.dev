@@ -10,7 +10,7 @@ class CustomFooter extends StatelessComponent {
 <footer class="custom-footer">
   <div class="footer-content">
     <p>Feito com ❤️ pela comunidade brasileira de desenvolvedores</p>
-    <a href="https://github.com/schultek/jaspr" target="_blank" rel="noopener noreferrer" class="footer-logo">
+    <a href="https://jaspr.site/" target="_blank" rel="noopener noreferrer" class="footer-logo">
       <img src="/images/jaspr-logo.svg" alt="Feito com Jaspr" width="106" height="40">
     </a>
   </div>
