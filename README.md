@@ -205,7 +205,7 @@ Agradecemos a todos os contribuidores que ajudam a manter este projeto vivo e at
 Feito com ❤️ pela comunidade brasileira de desenvolvedores
 
 <div align="center">
-  <a href="https://github.com/schultek/jaspr" target="_blank">
+  <a href="https://jaspr.site/" target="_blank">
     <img src="src/web/images/jaspr-logo.svg" alt="Feito com Jaspr" width="106" height="40">
   </a>
 </div>
