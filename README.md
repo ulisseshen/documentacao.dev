@@ -11,7 +11,7 @@
 ### ✅ Disponíveis
 [![Flutter](https://img.shields.io/badge/Flutter-Disponível-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutterbrasil.dev)
 [![Dart](https://img.shields.io/badge/Dart-Disponível-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dartbrasil.dev)
-[![Angular](https://img.shields.io/badge/Angular-Disponível-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angularbrasil.web.app)
+[![Angular](https://img.shields.io/badge/Angular-Disponível-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angularbrasil.dev)
 
 ### 🔄 Em Processo
 ![React Native](https://img.shields.io/badge/React_Native-Em_Processo-61DAFB?style=for-the-badge&logo=react&logoColor=black)
