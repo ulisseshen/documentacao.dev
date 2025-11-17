@@ -57,21 +57,21 @@ class DocCards extends StatelessComponent {
               badgeText: null,
               accentColor: '#0175C2',
             ),
-            // Angular Card (Coming Soon)
+            // Angular Card
             _buildDocCard(
               icon: _angularIcon(),
               title: 'Angular Brasil',
               description: 'Documentação Angular em PT-BR',
               features: [
                 'Framework para aplicações web',
-                'Em desenvolvimento',
+                'Documentação traduzida',
                 'Contribuições bem-vindas',
               ],
-              url: null,
-              badgeText: 'Em breve',
+              url: 'https://angularbrasil.web.app',
+              badgeText: null,
               accentColor: '#DD0031',
             ),
-            // React Native Card (Coming Soon)
+            // React Native Card (In Progress)
             _buildDocCard(
               icon: _reactNativeIcon(),
               title: 'React Native Brasil',
@@ -82,7 +82,7 @@ class DocCards extends StatelessComponent {
                 'Contribuições bem-vindas',
               ],
               url: null,
-              badgeText: 'Em breve',
+              badgeText: 'Em processo',
               accentColor: '#61DAFB',
             ),
             // Go Card (Coming Soon)
