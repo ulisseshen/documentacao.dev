@@ -21,16 +21,7 @@
 
 ## 🌟 Sobre o Projeto
 
-O **Documentação.dev** é uma iniciativa da comunidade brasileira para fornecer documentação técnica traduzida e de alta qualidade em Português do Brasil. Acreditamos que quebrar a barreira do idioma é essencial para democratizar o acesso ao conhecimento em tecnologia.
-
-### ✨ Características
-
-- 🎨 **Design Moderno e Responsivo** - Interface limpa e amigável que funciona em todos os dispositivos
-- 🌓 **Tema Claro/Escuro** - Alternar entre temas para melhor conforto visual
-- 🔍 **Busca Inteligente** - Encontre rapidamente o que precisa (Ctrl/Cmd + K)
-- 📱 **Mobile-First** - Otimizado para dispositivos móveis
-- ⚡ **Performance** - Site estático ultra-rápido
-- 🇧🇷 **100% em Português** - Todo o conteúdo em PT-BR
+O **Documentação.dev** é uma iniciativa da comunidade brasileira para traduzir documentações técnicas de frameworks e tecnologias para o Português do Brasil. Acreditamos que quebrar a barreira do idioma é essencial para democratizar o acesso ao conhecimento em tecnologia.
 
 ## 🚀 Como Usar
 
@@ -120,20 +111,7 @@ documentacao.dev/
 └── LICENSE               # Licença MIT
 ```
 
-## 🎨 Personalização
-
-### Cores e Tema
-
-As cores do tema podem ser personalizadas em `src/lib/main.dart`:
-
-```dart
-theme: ContentTheme(
-  primary: ThemeColor(ThemeColors.cyan.$400, dark: ThemeColors.cyan.$400),
-  background: ThemeColor(ThemeColors.slate.$50, dark: ThemeColors.zinc.$950),
-),
-```
-
-### Adicionando Conteúdo
+## 📝 Adicionando Conteúdo
 
 Para adicionar novas páginas de documentação:
 
@@ -154,34 +132,6 @@ Conteúdo aqui...
 SidebarGroup(title: 'Guias', links: [
   SidebarLink(text: "Nova Seção", href: '/nova-secao'),
 ]),
-```
-
-### Criando Componentes Customizados
-
-Crie novos componentes em `src/lib/components/`:
-
-```dart
-import 'package:jaspr/jaspr.dart';
-
-class MeuComponente extends StatelessComponent {
-  @override
-  Component build(BuildContext context) {
-    return div([
-      text('Olá, Mundo!'),
-    ]);
-  }
-}
-```
-
-E registre em `src/lib/main.dart`:
-
-```dart
-components: [
-  CustomComponent(
-    pattern: 'MeuComponente',
-    builder: (_, __, ___) => MeuComponente(),
-  ),
-],
 ```
 
 ## 💝 Como Apoiar
